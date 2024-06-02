@@ -1,0 +1,9 @@
+.vscode
+.DS_Store
+*.out
+*.exe
+*.txt
+*.sh
+*.a
+*.o
+CBAG
