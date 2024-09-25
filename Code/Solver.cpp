@@ -388,10 +388,10 @@ vector<int> Solver::solve(int chromosomeSize, int minimumDistance,
                           int crossoverPopulation, double mutateProbabilty,
                           double alpha, double beta) {
     if (chromosomeSize == -1)
-        chromosomeSize = burninglength - 3;
+        chromosomeSize = max(burninglength - 3, 2);
 
     if (minimumDistance == -1)
-        minimumDistance = burninglength - 3;
+        minimumDistance = max(burninglength - 3, 2);
 
     sigmoidCenrtality = vector<pair<double, int>>(nodes, {0, 0});
     sigmoidCenrtalitySum = 0;
